@@ -22,7 +22,7 @@ RUN pip install pytorch-lightning neptune-client neptune-notebooks
 
 # NLP
 RUN pip install \
-        git+https://github.com/huggingface/transformers \
+        transformers==4.16.2 \
         emoji soynlp
 RUN pip install konlpy 
 

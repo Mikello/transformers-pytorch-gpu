@@ -5,7 +5,7 @@ docker run -d --gpus=all --ipc=host \
     --restart=unless-stopped \
     -u $(id -u ${USER}):$(id -g ${USER}) \
     -p 42000:8888 \
-    -v $(pwd):/home/user/code \
+    -v /home/z/work/huawei_nlp/NBME:/home/NBME \
     beomi/transformers-pytorch-gpu:1.7.0-nvcr \
     zsh -c '
     export SHELL=zsh;
@@ -14,4 +14,4 @@ docker run -d --gpus=all --ipc=host \
     --ip=0.0.0.0 \
     --allow-root \
     --NotebookApp.token= \
-    --notebook-dir=/home/user/code'
+    --notebook-dir=/home'

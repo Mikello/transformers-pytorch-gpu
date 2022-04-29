@@ -1,5 +1,6 @@
 # transformers-pytorch-gpu
 💡 Docker setup for Huggingface 🤗 Transformers + GPU + Jupyter notebook + OhMyZsh 
+https://github.com/Beomi/transformers-pytorch-gpu
 
 ## Features
 
